@@ -1,0 +1,371 @@
+@font-face {
+    font-family: Epilogue;
+    src: url(/fonts/Epilogue-VariableFont_wght.ttf);
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 95px 85px 95px 80px 80px 80px 80px;
+    grid-gap: 0px 30px;
+}
+.Features-dropdown{
+    display: flex;
+    cursor: pointer;
+}
+ .Features-dropdown:hover img{
+    cursor: pointer;
+    content: url(/assets/images/icon-arrow-up.svg);
+}
+
+.Company-dropdown{
+    display: flex;
+}
+.Company-dropdown:hover img{
+    cursor: pointer;
+    content: url(/assets/images/icon-arrow-up.svg);
+}
+
+.down-icon{
+    padding: 3px;
+}
+.sep-menu{
+    display: flex;
+    margin-left: 580px;
+}
+.sep-menu .register-btn{
+    margin-left: 20px;
+}
+
+.dropdown-menus{
+    display: flex;
+    margin-left: 95px;
+    margin-top: -10px;
+    width: max-content;
+}
+.dropdown-content-second a{
+    display: block;
+}
+.dropdown-content-second{
+     position: absolute;
+    margin-left: 190px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    line-height: 30px;
+    height: 125px;
+    background-color: white;
+    display: none;
+}
+
+.Features-dropdown-content{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    border-radius: 15px;
+    display: none;
+}
+.Features-dropdown-content a{
+    margin-left: 10px;
+}
+ 
+
+ .maincontent{
+    position: absolute;
+    display: flex;
+    width: max-content;
+    justify-content: space-evenly;
+    margin-left: 120px;
+    margin-top: 153px;
+} 
+
+ #right-image{
+    width: 380px;
+    height: 530px;
+    margin-top: -141px;
+    margin-bottom: 50px;
+} 
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 11pt;
+    font-family: Epilogue;
+}
+
+.left-container{
+    padding-top: 10px;
+    margin-right: 80px;
+}
+.heading-container{
+    width: 390px;
+    word-wrap: normal;
+    padding-left: 30px;
+}
+.heading-container p{
+    font-family: Epilogue;
+    font-size: 40pt;
+    font-weight: 700;
+    line-height: 50.5px;
+}
+.message-container{
+    padding: 30px;
+    word-wrap: normal;
+    width: 420px;
+}
+.message-container p{
+    font-family: Epilogue;
+    font-size: 11pt;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    line-height: 20px;
+}
+.register-btn{
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+    padding: 8px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Epilogue;
+    font-size: 11pt;
+}
+#menu-icon{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: none;   
+}
+.side-barmenu{
+    display: none;
+}
+#btn-readmore{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+#btn-readmore:hover{
+    color: black;
+    background-color: white;
+    border-style: solid;
+}
+
+.footer{
+    width: 450px;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+.readmore-btn{
+    padding: 30px;
+}
+
+
+/*Meida Query for the menu button*/
+@media only screen and (max-width: 500px) {
+    .attribution{
+        display: none;
+    }
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .grid-container{
+        display: grid;
+        justify-self: stretch;
+        width: 100%;
+    }
+    .grid-container .sep-menu{
+        visibility: hidden;
+    }
+    .grid-container .Company-dropdown{
+        visibility: hidden;
+    }
+    .grid-container .Features-dropdown{
+        visibility: hidden;
+    }
+    .grid-container .Careers-tab{
+        visibility: hidden;
+    }
+    .grid-container .About-tab{
+        visibility: hidden;
+    }
+   
+    #menu-icon{
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+        margin-bottom: 5px;
+        display: block;  
+        margin-left: 192px;
+    }
+    #menu-icon-close{
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        display: block;  
+        margin-left: 192px;
+    }
+    .side-barmenu{
+        display: none;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        border-color: white;
+        width: 248px;
+        background-color: white;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .mobilemenuFeatures-dropdown{
+        padding: 20px;
+    }
+    .mobileMenu-features-expanded{
+        padding-left: 35px;
+        padding-bottom: 20px;
+        line-height: 35px;
+        display: none;
+    }
+    .mobileMenu-company{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .company-expanded a{
+        padding-left: 35px;
+        padding-bottom: 20px;
+        display: block;
+    }
+    .company-expanded{
+        display: none;
+    }
+    .mobileMenu-Careers{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .mobileMenu-About{
+        padding-left: 20px;
+    }
+    .mobileMenuLogin{
+        padding-left: 80px;
+        padding-top: 30px;
+        justify-items: center;
+    }
+    .register-btn{
+        background-color: white;
+        color: hsl(0, 0%, 41%);
+        padding: 8px 60px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Epilogue;
+        font-size: 11pt;
+    }
+    .register-div{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+   .maincontent #right-image{
+       width: 375px;
+       height: 250px;
+       content: url(/assets/images/image-hero-mobile.png);
+       margin-top: 0px;
+       margin-bottom: 40px;
+   }
+
+   .maincontent{
+       flex-direction: column-reverse;
+       width: 375px;
+       margin-left: 0px;
+       margin-top: 0px;
+   }
+
+   .heading-container p{
+    font-size: 20pt;
+    text-align: center;
+    font-weight: 700;
+    line-height: 50.5px;
+}
+
+.heading-container{
+    width: 371px;
+}
+
+.left-container{
+    padding-top: 0px;
+    margin-right: 0px;
+}
+
+.message-container{
+    padding: 10px;
+    word-wrap: normal;
+    width: 371px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border-style: solid; */
+}
+.message-container p{
+    font-family: Epilogue;
+    font-size: 11pt;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    line-height: 20px;
+    text-align: center;
+}
+
+#btn-readmore{
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.readmore-btn{
+    margin-left: 75px;
+}
+
+.footer{
+    width: 370px;
+    margin-top: 35px;
+    padding-left: 0px;
+}
+
+.footer img{
+    width: 88px;
+    padding-left: 15px;
+}
+
+}

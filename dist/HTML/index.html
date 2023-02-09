@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/CSS/styles.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  
+</head>
+<body>
+  <div class="grid-container">      
+    <img src="/assets/images/logo.svg"  id = "logo" />
+    <img src="/assets/images/icon-menu.svg" id="menu-icon"/>
+
+    <!-- This is the root container of the menu and the hamburger icon -->
+    <div class="side-barmenu">
+
+      <!-- This is the hamburger close icon  -->
+      <img src="/assets/images/icon-close-menu.svg" id="menu-icon-close"/>
+
+    <!-- This is the first items thus, the Features section of the mobile money -->
+        <div class="mobilemenuFeatures-dropdown" width="25px">
+          <a href="#">Features</a>
+          <img class ="down-icon" src="/assets/images/icon-arrow-down.svg"  height="12px"/>
+      </div>
+
+      <!-- This is the expanded content of the first item on the mobile menu thus the features menu -->
+      <div class="mobileMenu-features-expanded" >
+
+        <div class="itemone">
+          <img id="todo" src="/assets/images/icon-todo.svg"/>
+          <a href="#">Todo List</a>
+        </div>  <!----This is the first item on the Feature dropdownlist-->
+
+        <div class="itemtwo">
+          <img id="calendar" src="/assets/images/icon-calendar.svg"/>
+          <a href="#">Calendar</a>
+        </div>  <!--This is the second item on the Feature dropdown menulist-->
+
+        <div class="itemthree">
+          <img id="reminders" src="/assets/images/icon-reminders.svg"/>
+          <a href="#">Reminders</a>
+        </div> <!---This is the third item on the Feature dropdown menulists-->
+
+        <div class="itemfour">
+          <img id="planning" src="/assets/images/icon-planning.svg"/>
+          <a href="#">Planning</a>
+        </div> <!--This is the fourth item on the Feature dropdown menu list-->
+        
+      </div>
+
+      <!-- This is the second item on the mobile menu -->
+      <div class="mobileMenu-company">
+        <a href="#">Company</a>
+        <img class ="down-icon" src="/assets/images/icon-arrow-down.svg"   height="12px"/>
+      </div>
+
+      <!-- This is the expanded section of the second item on the mobile menu list items -->
+      <div class="company-expanded">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+      </div>
+      
+      <!-- This is the third item on the mobile menu -->
+      <div class="mobileMenu-Careers">
+        <a href ="#" >Careers</a>
+      </div>
+
+      <!-- This is the fourth item on the mobile menu -->
+      <div class="mobileMenu-About">
+        <a href ="#" >About</a>
+      </div>
+
+      <!-- This is the fifth item on the mobile menu -->
+
+      <div class="mobileMenuLogin">
+        <a href ="#">Login</a>
+      </div>
+
+      <div class="register-div">
+        <a href ="#" class="register-btn">Register</a>
+      </div>
+
+
+    </div>
+
+
+      <div class="Features-dropdown" width="25px">
+        <a href="#">Features</a>
+        <img class ="down-icon" src="/assets/images/icon-arrow-down.svg"  height="12px"/>
+      </div>
+
+      <div class="Company-dropdown">
+        <a href="#">Company</a>
+        <img class ="down-icon" src="/assets/images/icon-arrow-down.svg"   height="12px"/>
+      </div>
+
+        <div>
+          <a href ="#" class="Careers-tab">Careers</a>
+        </div>
+  
+        <div>
+          <a href ="#" class="About-tab">About</a>
+        </div>
+        
+        <div class="sep-menu">
+          <div>
+            <a href ="#" class="Login-tab">Login</a>
+          </div>
+          
+          <div>
+            <a href ="#" class="register-btn">Register</a>
+          </div>
+        </div>
+       
+    </div>
+
+    
+      <div class="dropdown-menus">
+
+      <div class="Features-dropdown-content" >
+        
+        <div class="one">
+          <img id="todo" src="/assets/images/icon-todo.svg"/>
+          <a href="#">Todo List</a>
+        </div>  
+        
+        <div class="two">
+          <img id="calendar" src="/assets/images/icon-calendar.svg"/>
+          <a href="#">Calendar</a>
+        </div>  
+        
+        <div class="three">
+          <img id="reminders" src="/assets/images/icon-reminders.svg"/>
+          <a href="#">Reminders</a>
+        </div> 
+        
+        <div class="three">
+          <img id="planning" src="/assets/images/icon-planning.svg"/>
+          <a href="#">Planning</a>
+        </div> 
+        
+      </div>
+
+      <div class="dropdown-content-second">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+      </div>
+
+    </div> 
+
+    <div class="maincontent">
+      
+      <div class="left-container">
+        
+        <div class = "heading-container">
+          <p id="main-heading">Make remote work</p>
+        </div>
+  
+        <div class="message-container">
+          <p>Get your team in sync, no matter your location.
+            Streamline processes, create team rituals, and 
+            watch productivity soar.
+          </p>
+        </div>
+        
+        <div class="readmore-btn">
+          <a href="#" id="btn-readmore">Learn more</a>
+        </div>
+        
+        <div class="footer">
+          <img src="/assets/images/client-databiz.svg"/>
+          <img src="/assets/images/client-audiophile.svg" id="audiophile"/>
+          <img src="/assets/images/client-meet.svg"/>
+          <img src="/assets/images/client-maker.svg"/>
+        </div>
+
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">AGYEMAN ISAAC</a>.
+        </div>
+
+      </div>
+      
+      <img  src="/assets/images/image-hero-desktop.png"  id="right-image"/>
+      
+    </div>
+    <script src="/dist/JS/index.js" type="text/javascript"></script>
+  </body>
+  </html>
+ 
+    
